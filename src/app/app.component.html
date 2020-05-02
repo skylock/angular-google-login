@@ -1,0 +1,9 @@
+<al-google-one-tap (credentialResponse)="logEvent($event)"></al-google-one-tap>
+<div *ngIf="user">
+  <div>Last name: {{ user.lastName }}</div>
+  <div>First name: {{ user.firstName }}</div>
+  <div>Full name: {{ user.name }}</div>
+  <div>Email: {{ user.email }}</div>
+  <div><img src="{{ user.photoUrl }}" alt="User Photo"></div>
+</div>
+<router-outlet></router-outlet>
