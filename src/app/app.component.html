@@ -1,4 +1,8 @@
 <al-google-one-tap (credentialResponse)="logEvent($event)"></al-google-one-tap>
+<div class="content">
+  <span>{{ title }} app is running!</span>
+</div>
+
 <div *ngIf="user">
   <div>Last name: {{ user.lastName }}</div>
   <div>First name: {{ user.firstName }}</div>
